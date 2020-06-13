@@ -32,7 +32,7 @@ def my_form_post():
         df2=paytm(item)
         df3=snapdeal(item)
     
-    return render_template("home.html", column_names=df.columns.values,row_data_1=list(df1.values.tolist()),row_data_2=list(df2.values.tolist()),row_data_3=list(df3.values.tolist()),zip=zip)
+    return render_template("index.html", column_names=df.columns.values,row_data_1=list(df1.values.tolist()),row_data_2=list(df2.values.tolist()),row_data_3=list(df3.values.tolist()),zip=zip)
 
 def other_products(key):
     try:
